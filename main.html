@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en">
+<head>
+  <title>Medico</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <link rel="stylesheet" href="css_main/main.css">
+  <link rel="stylesheet" href="css_main/recognition.css">
+  <script src="js_login/amazon-cognito-identity.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.685.0.min.js"></script>
+  <script src="js_login/config.js"></script>
+  <script src="js_main/main.js"></script>
+  <script src="js_main/user.js"></script>
+  
+  
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Medico Patient Page</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a  id="create-user-condition">**Health Condition Form**</a></li>
+      <li><a  id="create-speech" href="#">Speech Recognition</a></li>
+      <li><a id="patientList" href="#">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+      <li><a id="patientList" href="#">||</a></li>
+      <li><a id="patientList" href="#">User:</a></li>
+      <li><a id="email_value" href="#">Patients List</a></li>
+      <li><a id="patientList" href="#">||</a></li>
+      
+    </ul>
+  </div>
+</nav>
+  
+<div class="container" style="background-color: white;">
+  <!-- create user health condition-->
+  <div id="create-user-condition-show" style="display:none" >
+    <form>
+      <div class="row">
+        <div style="text-align: center;">
+          <label for="Health_condition">Health_condition</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-100">
+          <textarea id="Health_condition_type" name="Health_condition" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input id="checkBox" type="checkbox">我已上傳好體溫</input>
+        <center><input type="button" value="Submit" onclick="StoreCondition()" style="text-align: center;"></center>
+      </div>
+      </form>
+  </div>
+  <!-- create user health condition-->
+
+  <!-- speech-->
+  <div id="speech_recognition" style="display:none" >
+    <div id="showdate" ></div>
+    <div class="right">
+      <button id="start_button">
+        <img id="start_img" src="img/mic.png" alt="Start" onclick="startButton()"></button>
+    </div>
+    <div id="results">
+      <span id="final_span" class="final"></span>
+      <span id="interim_span" class="interim"></span>
+      <p>
+    </div>
+    <div class="center">
+      <div class="sidebyside" style="text-align:right">
+        <input id="send_to_db_button"  onclick="sendButton()" type="image" alt="" src="img/send.png" width="50px" height="50px">
+    </div>
+      <div class="sidebyside" style="text-align:right">
+          <input id="copy_button"  onclick="GenerateTxt()" type="image" alt="" src="img/txt.png" width="50px" height="50px">
+      </div>
+      
+      <div class="sidebyside">
+        <input id="email_button"  onclick="emailButton()" type="image" alt="" src="img/mail.png" width="50px" height="50px">
+      </div>
+      <p>
+      <div class="div_language">
+        <select id="select_language" onchange="updateCountry()"></select>
+        <select id="select_dialect" ></select>
+      </div>
+    
+    </div>
+  </div>
+  <!-- speech-->
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+<script src="js_recognition/main.js"></script>
+</html>
