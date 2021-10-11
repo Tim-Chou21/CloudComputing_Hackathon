@@ -1,7 +1,6 @@
 # Remote Caring System (CloudComputing_Hackathon)
 
-<img width="513" alt="截圖 2021-10-10 下午10 10 46" src="https://user-images.githubusercontent.com/54812971/136736453-d1b93a27-d601-4034-a8a0-31ab465bf025.png">
-
+<img width="499" alt="截圖 2021-10-10 下午10 43 00" src="https://user-images.githubusercontent.com/54812971/136738918-2ed0eabc-5f7c-49b1-8da8-07a580fd1b31.png">
 [Scenario]
 
 - Patients: Report body temperature and symptoms everyday
