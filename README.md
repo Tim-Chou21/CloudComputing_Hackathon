@@ -4,8 +4,8 @@
 
 [Scenario]
 
-Patients: Report body temperature and symptoms everyday
-Doctors: Monitor all quarantined patients' situation through website.
+- Patients: Report body temperature and symptoms everyday
+- Doctors: Monitor all quarantined patients' situation through website.
 
 <img width="467" alt="截圖 2021-10-10 下午10 41 27" src="https://user-images.githubusercontent.com/54812971/136738793-90564a8c-620b-4532-b306-00ab4cef79de.png">
 
