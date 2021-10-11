@@ -10,4 +10,4 @@
 
 [System Architecture]
 
-<img width="509" alt="截圖 2021-10-10 下午10 11 32" src="https://user-images.githubusercontent.com/54812971/136736504-d4189af4-a559-418d-b949-c87eb84b90cc.png">
+<img width="482" alt="截圖 2021-10-10 下午10 44 41" src="https://user-images.githubusercontent.com/54812971/136739027-0f05ba98-1b5c-4788-afe5-1764169156a7.png">
